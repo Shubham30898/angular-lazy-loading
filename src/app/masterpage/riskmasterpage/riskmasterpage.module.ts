@@ -3,6 +3,8 @@ import { CommonModule } from '@angular/common';
 
 import { RiskmasterpageRoutingModule } from './riskmasterpage-routing.module';
 import { RiskmasterpageComponent } from './riskmasterpage.component';
+import { HomeModule } from 'src/app/home/home.module';
+import { SharedModule } from 'src/app/shared/shared.module';
 
 
 @NgModule({
@@ -11,7 +13,9 @@ import { RiskmasterpageComponent } from './riskmasterpage.component';
   ],
   imports: [
     CommonModule,
-    RiskmasterpageRoutingModule
+    RiskmasterpageRoutingModule,
+    HomeModule,
+    SharedModule
   ],
   exports: [
     RiskmasterpageComponent
